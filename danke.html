@@ -96,9 +96,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   add("Wochentage", "erreichbarkeit_tage");
 
   /* /danke gehört exklusiv den Check-Absendern (sauberes Conversion-Tracking).
-     Direktaufrufe ohne Lead-Daten -> zurück zur Startseite */
+     Direktaufrufe ohne Lead-Daten -> öffentliche Terminseite */
   if (!lead.name && !lead.email) {
-    window.location.replace("/");
+    window.location.replace("/terminbuchen");
     return;
   }
 
